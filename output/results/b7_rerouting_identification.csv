@@ -1,0 +1,7 @@
+test,estimate,pval,n_products,interpretation,pct,nobs
+Supply Gap Correlation (Pearson),0.001837317677410541,0.9388481191650175,1746.0,ambiguous,,
+Supply Gap Correlation (Spearman),-0.1264690463744607,1.1451137538345699e-07,1746.0,ambiguous,,
+Supply Gap WLS Regression,1.8442945730418324e-06,,1746.0,$0.00 gateway increase per $1 coalition reduction,,
+Rerouting: High Exposure,0.115391210686659,2.019550214815702e-05,,,12.231241231000102,447688.0
+Rerouting: Low Exposure,0.04388384540596369,0.23681736613778548,,,4.4860982436357055,447688.0
+Non-Gateway Sanctioned DiD,0.09165441849866814,0.00015267795951889873,,,9.598600413960146,447615.0

@@ -1,0 +1,11 @@
+Specification,Method,β,SE,% Effect,N
+OLS | Full FE | T1 | value,OLS,-0.5701***,(0.0250),-43.5%,"1,015,978"
+OLS | Reduced FE | T1 | value,OLS,-1.6827***,(0.0210),-81.4%,"1,016,147"
+OLS | Full FE | T2 | value,OLS,-0.5697***,(0.0254),-43.4%,"1,015,978"
+OLS | Full FE | EU | value,OLS,-0.5076***,(0.0243),-39.8%,"1,015,978"
+OLS | Full FE | T1 | unit_value,OLS,-0.0576***,(0.0140),-5.6%,"989,898"
+OLS | Full FE | T1 | quantity,OLS,-0.5393***,(0.0319),-41.7%,"989,898"
+PPML | Full FE | T1 | value (Top50),PPML,-0.4726***,(0.0887),-37.7%,"842,264"
+PPML | Full FE | T2 | value (Top50),PPML,-0.5229***,(0.0910),-40.7%,"842,264"
+PPML | Full FE | EU | value (Top50),PPML,-0.4874***,(0.0835),-38.6%,"842,264"
+PPML | Full FE | T1 | quantity (Top50),PPML,-0.5005***,(0.0910),-39.4%,"825,386"

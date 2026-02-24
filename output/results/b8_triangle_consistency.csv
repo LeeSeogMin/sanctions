@@ -1,0 +1,2 @@
+n_products,pearson_rho,pearson_p,spearman_rho,spearman_p,weighted_rho,both_up,both_up_pct,cg_up_gr_down,cg_down_gr_up,both_down,top20_match
+1857,0.08276760209985505,0.00035640437787900825,-0.021804336664831944,0.34768373721386625,0.2743194593199732,938,50.511577813677974,233,543,143,14
