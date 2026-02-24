@@ -146,7 +146,7 @@ All random seeds are fixed. Point estimates should match across platforms.
 @article{lee2026sanctions,
   title={Sanctions Leakage Dynamics: How Third-Country Rerouting
          Undermines Trade Restrictions on Russia},
-  author={Lee, Seog-Min},
+  author={ },
   year={2026},
   journal={Working Paper}
 }
