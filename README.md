@@ -139,22 +139,3 @@ All output is written to `output/results/` (CSV), `output/figures/` (PNG), and `
 All random seeds are fixed. Point estimates should match across platforms.
 
 **Expected runtime**: approximately 30 minutes on a modern laptop (scripts 02-06).
-
-## 6. Citation
-
-```bibtex
-@article{lee2026sanctions,
-  title={Sanctions Leakage Dynamics: How Third-Country Rerouting
-         Undermines Trade Restrictions on Russia},
-  author={ },
-  year={2026},
-  journal={Working Paper}
-}
-```
-
-## License
-
-This replication package is provided for academic use. The underlying data sources retain their original licenses and terms of use.
-
-- BACI: CEPII, free for academic use
-- Chupilkin et al. sanctions data: [OpenICPSR 229004](https://www.openicpsr.org/openicpsr/project/229004), CC-BY 4.0
