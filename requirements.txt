@@ -1,0 +1,16 @@
+# Python dependencies for the replication code.
+# Python 3.13.
+#
+# pyfixest is pinned. The default for singleton removal changed in 0.40.1, and
+# the scripts verify the installed version and stop if it differs, because the
+# reproduction gates are calibrated to that default.
+
+pandas>=2.2.0
+numpy>=1.26.0
+pyarrow>=15.0.0
+pyfixest==0.40.1
+matplotlib>=3.8.0
+
+# R 4.6.0 is required for the Callaway-Sant'Anna scripts (25_csdid.R,
+# 28_csdid_pretrend.R), with did 2.5.1 and data.table:
+#   install.packages(c("did", "data.table"))
