@@ -66,16 +66,16 @@ python code/05_baci_sanctions_panel.py
 | `16_military_expharma.py` | Military technology excluding HS 30/33 — Table 4, Figure 3 |
 | `17_make_revision_figures.py` | Figures 2, 3 and the Appendix K figure |
 | `18_ekmn_concordance.py` | Agreement between the two sanctions lists — Section 3.1 |
-| `19_ekmn_exporter_specific_ppml.py` | Exporter-specific treatment — Appendix L |
+| `19_ekmn_exporter_specific_ppml.py` | Exporter-specific treatment — auxiliary diagnostic, not reported in the manuscript |
 | `20_agri_embargo_robustness.py` | Excluding HS 01–24 — Table 6 |
 | `21_save_reported_aggregates.py` | Descriptive aggregates reported in the text |
 | `22_rerouting_ppml_staggered.py` | Supplier replacement, PPML — Table 5 Panel A |
 | `23_bridge_ppml_joint.py` | Coalition and non-coalition sides jointly — Section 4.1 |
 | `24_export_csdid_panel.py` | Panel export for the CS-DID estimator |
-| `25_csdid.R` | Callaway–Sant'Anna estimates — Table 6, Appendix M |
+| `25_csdid.R` | Callaway–Sant'Anna estimates — Table 6, Appendix L |
 | `26_gateway_ppml.py` | Upstream gateway test, Equation (5) — Table 6, Appendix I |
 | `27_rerouting_diagnostics.py` | Influence diagnostics for supplier replacement — Table 5 |
-| `28_csdid_pretrend.R` | CS-DID timing diagnostic — Appendix M |
+| `28_csdid_pretrend.R` | CS-DID timing diagnostic — Appendix L |
 | `29_headline_diagnostics.py` | Leave-one-country-out for the benchmark — Section 4.1 |
 | `30_baci_coverage_check.py` | Post-2022 BACI coverage of Russia flows — Section 6.4 |
 | `31_table4_rerouting_check.py` | Reproduction check, category-level third-country estimates |
@@ -84,7 +84,7 @@ python code/05_baci_sanctions_panel.py
 | `34_direct_effect_inference_dynamics.py` | Inference and dynamics for the above |
 | `35_supplier_replacement.py` | Supplier replacement with country and size exclusions |
 | `36_route_linked_transshipment_ppml.py` | Route-linked transshipment diagnostic |
-| `37_full_bilateral_joint_ppml.py` | Three channels in one bilateral PPML — Appendix N |
+| `37_full_bilateral_joint_ppml.py` | Three channels in one bilateral PPML — Appendix M |
 | `38_methodology_revision_tables.py` | Collects 33–37 into one audit table |
 | `39_saturated_joint_feasibility.py` | Why the saturated joint PPML does not complete |
 | `revision_methodology_utils.py` | Shared helpers for 33–38 (not run directly) |
