@@ -49,8 +49,10 @@ phase3_data/raw/EKMN_230342/data_sa_20241230.dta
 ## Running the analysis
 
 Run `code/05_baci_sanctions_panel.py` first; it writes the panel that every
-other script reads. After that the scripts are independent and can be run in
-any order.
+other script reads. The remaining scripts are independent of one another with
+one exception: `37_full_bilateral_joint_ppml.py` checks the saved output of
+`33_direct_effect_ekmn_ppml.py` and `35_supplier_replacement.py` before it
+estimates anything, so run those two before it.
 
 ```bash
 python code/05_baci_sanctions_panel.py
@@ -66,7 +68,6 @@ python code/05_baci_sanctions_panel.py
 | `16_military_expharma.py` | Military technology excluding HS 30/33 — Table 4, Figure 3 |
 | `17_make_revision_figures.py` | Figures 2, 3 and the Appendix K figure |
 | `18_ekmn_concordance.py` | Agreement between the two sanctions lists — Section 3.1 |
-| `19_ekmn_exporter_specific_ppml.py` | Exporter-specific treatment — auxiliary diagnostic, not reported in the manuscript |
 | `20_agri_embargo_robustness.py` | Excluding HS 01–24 — Table 6 |
 | `21_save_reported_aggregates.py` | Descriptive aggregates reported in the text |
 | `22_rerouting_ppml_staggered.py` | Supplier replacement, PPML — Table 5 Panel A |
@@ -78,16 +79,11 @@ python code/05_baci_sanctions_panel.py
 | `28_csdid_pretrend.R` | CS-DID timing diagnostic — Appendix L |
 | `29_headline_diagnostics.py` | Leave-one-country-out for the benchmark — Section 4.1 |
 | `30_baci_coverage_check.py` | Post-2022 BACI coverage of Russia flows — Section 6.4 |
-| `31_table4_rerouting_check.py` | Reproduction check, category-level third-country estimates |
-| `32_baci_version_compare.py` | Comparison against the preceding BACI release |
-| `33_direct_effect_ekmn_ppml.py` | Direct effect, jurisdiction-specific treatment |
-| `34_direct_effect_inference_dynamics.py` | Inference and dynamics for the above |
-| `35_supplier_replacement.py` | Supplier replacement with country and size exclusions |
-| `36_route_linked_transshipment_ppml.py` | Route-linked transshipment diagnostic |
-| `37_full_bilateral_joint_ppml.py` | Three channels in one bilateral PPML — Appendix M |
-| `38_methodology_revision_tables.py` | Collects 33–37 into one audit table |
-| `39_saturated_joint_feasibility.py` | Why the saturated joint PPML does not complete |
-| `revision_methodology_utils.py` | Shared helpers for 33–38 (not run directly) |
+| `33_direct_effect_ekmn_ppml.py` | Direct effect under the jurisdiction-specific treatment definition — required input to the gate in `37` |
+| `35_supplier_replacement.py` | Supplier replacement with country and size exclusions — Section 4.4, Table 5 |
+| `37_full_bilateral_joint_ppml.py` | Three channels in one bilateral PPML — Appendix M, Table M1 |
+| `39_saturated_joint_feasibility.py` | Fixed-effect dimensions of the saturated joint PPML — Appendix M.1 |
+| `revision_methodology_utils.py` | Shared helpers for `33`, `35`, `37` and `39` (not run directly) |
 
 The longer estimations expose `--stage` so that a gate or a reduced-sample pilot
 can be run before the full fit. Several take one to three hours on the full
